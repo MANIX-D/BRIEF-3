@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNova - Créateur de CV</title>
+    <link href="/assets/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cv.css" />
+</head>
+<body class="relative text-sm">
+    <!-- Navbar fixe -->
+    <nav class="fixed w-full bg-blue-200 p-2 shadow-md top-4 z-50">
+        <div class="container mx-auto flex justify-start items-center">
+            <!-- Logo et nom -->
+            <div class="flex items-center">
+                <img src="/assets/logo.png" alt="Logo" class="h-10 w-10 mr-2">
+                <span class="font-bold text-sm">WebNova</span>
+            </div>
+
+            <!-- Menu desktop -->
+            <div class="hidden md:flex space-x-8 text-sm font-semibold ml-10">
+                <a href="index.html" class="hover:text-blue-700">ACCUEIL</a>
+                <a href="cv.html" class="hover:text-blue-700">CV</a>
+            </div>
+
+            <!-- Boutons de connexion -->
+            <div class="hidden md:flex items-center space-x-4 ml-auto">
+                <a href="login.html" class="text-black font-semibold hover:text-blue-700">Log in</a>
+                <a href="signup.html" class="bg-blue-700 text-white px-2 py-2 rounded-md shadow-md hover:bg-blue-800">Sign up</a>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="md:hidden ml-auto">
+                <button onclick="toggleMenu()" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu mobile caché -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="flex flex-col space-y-2 p-4 text-lg font-semibold">
+                <a href="index.html" class="hover:text-blue-700">ACCUEIL</a>
+                <a href="cv.html" class="hover:text-blue-700">CV</a>
+                <a href="login.html" class="hover:text-blue-700">Log in</a>
+                <a href="signup.html" class="bg-blue-700 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-800 text-center">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal avec marge pour la navbar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 mt-16"> <!-- Ajout de mt-16 et pt-16 -->
+        <div class="grid md:grid-cols-2 gap-12 items-center min-h-[80vh]">
+            <!-- Texte principal -->
+            <div class="space-y-8">
+                <h1 class="text-5xl md:text-[56px] font-bold text-gray-900 leading-[1.15]">
+                    <span class="block">Créez gratuitement</span>
+                    <span class="block">un CV qui vous</span>
+                    <span class="block">permettra de</span>
+                    <span class="block">décrocher un</span>
+                    <span class="text-blue-600">emploi</span>
+                </h1>
+
+                <p class="text-xl text-gray-600 mt-6 leading-relaxed">
+                    Votre premier CV est 100 % gratuit,<br>
+                    incluant toutes les fonctionnalités de<br>
+                    conception et les téléchargements
+                </p>
+
+                <div class="space-y-6 mt-12">
+                    <a href="cv.html"> <button class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">
+                        Commencez - C'est gratuit 
+                    </button></a>
+                    <p class="text-sm text-gray-500 mt-4">
+                        Apprécié par plus de milliers d'utilisateurs satisfaits
+                    </p>
+                </div>
+            </div>
+
+            <!-- Espace image -->
+            <div class="hidden md:block relative h-full">
+                <div class="absolute inset-0 bg-gradient-to-br from-white-50 to-white-100 rounded-[40px] overflow-hidden z-10">
+                    <div class="w-full h-full flex items-center justify-center text-gray-400">
+                        <img src="/assets/cv_illustration.png" alt="exemple cv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section caractéristiques -->
+<section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+            <!-- Première caractéristique -->
+            <div class="p-6 bg-blue-50 rounded-xl transition-all hover:bg-blue-100 hover:shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">1er CV, gratuit à vie</h3>
+                    <p class="text-gray-600">Créez et téléchargez votre premier CV sans aucun coût, aucune limitation</p>
+                </div>
+            </div>
+
+            <!-- Deuxième caractéristique -->
+            <div class="p-6 bg-blue-50 rounded-xl transition-all hover:bg-blue-100 hover:shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Confidentialité</h3>
+                    <p class="text-gray-600">Vos données restent privées et sécurisées à 100%</p>
+                </div>
+            </div>
+
+            <!-- Troisième caractéristique -->
+            <div class="p-6 bg-blue-50 rounded-xl transition-all hover:bg-blue-100 hover:shadow-lg">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Modèles professionnels</h3>
+                    <p class="text-gray-600">Conçus par des experts en recrutement et design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
