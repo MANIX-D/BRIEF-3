@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+
+a{
+    color:blue;
+    margin-right: 0px;
+    
+
+}
+button{
+    background-color:rgb(76, 76, 209);
+}
+.row{
+    
+}

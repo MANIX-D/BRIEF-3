@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="./assets/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form class="flex justify-around border">
+        <div class="grid gap-2">
+          <div class="flex justify-center">
+            <img src="assets/images/logo.png" alt="icone">
+          </div>  
+          <h1 class="text-3xl font-medium">Log in to your account</h1>
+          <p class="text-xl font-thin flex justify-center color-gray">Welcome back! Please enter your details</p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="mt-1 p-2 w-full border grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 rounded border">
+          <label for="password">Mot de Passe</label>
+          <input type="password" name="password" id="password" placeholder="*****@gmail.com" class="mt-1 p-2 w-full border grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 rounded border">
+          <div class="flex justify-between items-center">
+            <div>
+              <input type="checkbox" name="remember" id="remember">
+              <label for="remember">Remember for 30 days</label>
+            </div>
+            <a href="#" class="text-blue-500">Forgot Password</a>
+          </div>
+          <button type="submit" class="mt-1 p-2 w-full bg-blue-500 hover:bg-blue-600 text-white rounded">Sign in</button>
+          <div class="relative ">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <img src="assets/images/Social icon-1.jpg" alt="googleicone" class="mb-2">
+            </div>
+            <button type="button" class="mt-1 p-2 w-full border rounded">Sign in with Google</button>
+          </div>
+          <div class="text-center">
+            Don't have an account? <a href="#" class="text-blue-500">Sign up</a>
+          </div>
+        </div>
+      </form>
+   
+   
+
+
+    <script src="login.js"></script>
+</body>
+</html>
